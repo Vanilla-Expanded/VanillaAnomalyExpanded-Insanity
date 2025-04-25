@@ -101,7 +101,13 @@ namespace VAEInsanity
 
         public override void SetInitialLevel()
         {
-            if (pawn.Faction == Faction.OfHoraxCult 
+            bool isHoraxCult = false;
+            if (Current.Game?.World != null && Find.FactionManager != null)
+            {
+                isHoraxCult = pawn.Faction == Find.FactionManager.OfHoraxCult;
+            }
+
+            if (isHoraxCult
                 || pawn.HasTrait(TraitDefOf.VoidFascination)
                 || pawn.HasTrait(TraitDefOf.Occultist)
                 || pawn.Inhumanized())
