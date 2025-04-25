@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaAnomalyExpanded-Insanity\\1.5\\Source\\",
+  "WorkspaceRootPath": "E:\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaAnomalyExpanded-Insanity\\1.5\\Source\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|VAEInsanity.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\vanillaanomalyexpanded-insanity\\1.5\\source\\patches\\pawn_interactionstracker_tryinteractwith_patch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|VAEInsanity.csproj|e:\\steam\\steamapps\\common\\rimworld\\mods\\vanillaanomalyexpanded-insanity\\1.5\\source\\patches\\pawn_interactionstracker_tryinteractwith_patch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|VAEInsanity.csproj|solutionrelative:patches\\pawn_interactionstracker_tryinteractwith_patch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -18,17 +18,17 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Pawn_InteractionsTracker_TryInteractWith_Patch.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaAnomalyExpanded-Insanity\\1.5\\Source\\Patches\\Pawn_InteractionsTracker_TryInteractWith_Patch.cs",
+              "DocumentMoniker": "E:\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaAnomalyExpanded-Insanity\\1.5\\Source\\Patches\\Pawn_InteractionsTracker_TryInteractWith_Patch.cs",
               "RelativeDocumentMoniker": "Patches\\Pawn_InteractionsTracker_TryInteractWith_Patch.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaAnomalyExpanded-Insanity\\1.5\\Source\\Patches\\Pawn_InteractionsTracker_TryInteractWith_Patch.cs",
+              "ToolTip": "E:\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaAnomalyExpanded-Insanity\\1.5\\Source\\Patches\\Pawn_InteractionsTracker_TryInteractWith_Patch.cs",
               "RelativeToolTip": "Patches\\Pawn_InteractionsTracker_TryInteractWith_Patch.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAvwE0AAAARAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAvwE0AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-21T15:23:02.273Z",
               "EditorCaption": ""

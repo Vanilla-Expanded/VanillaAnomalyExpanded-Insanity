@@ -16,7 +16,7 @@
           "build/Krafs.Publicizer.targets": {}
         }
       },
-      "Krafs.Rimworld.Ref/1.5.4297": {
+      "Krafs.Rimworld.Ref/1.5.4409": {
         "type": "package",
         "compile": {
           "ref/net472/Assembly-CSharp-firstpass.dll": {},
@@ -135,7 +135,7 @@
           "build/Krafs.Publicizer.targets": {}
         }
       },
-      "Krafs.Rimworld.Ref/1.5.4297": {
+      "Krafs.Rimworld.Ref/1.5.4409": {
         "type": "package",
         "compile": {
           "ref/net472/Assembly-CSharp-firstpass.dll": {},
@@ -254,7 +254,7 @@
           "build/Krafs.Publicizer.targets": {}
         }
       },
-      "Krafs.Rimworld.Ref/1.5.4297": {
+      "Krafs.Rimworld.Ref/1.5.4409": {
         "type": "package",
         "compile": {
           "ref/net472/Assembly-CSharp-firstpass.dll": {},
@@ -373,7 +373,7 @@
           "build/Krafs.Publicizer.targets": {}
         }
       },
-      "Krafs.Rimworld.Ref/1.5.4297": {
+      "Krafs.Rimworld.Ref/1.5.4409": {
         "type": "package",
         "compile": {
           "ref/net472/Assembly-CSharp-firstpass.dll": {},
@@ -492,7 +492,7 @@
           "build/Krafs.Publicizer.targets": {}
         }
       },
-      "Krafs.Rimworld.Ref/1.5.4297": {
+      "Krafs.Rimworld.Ref/1.5.4409": {
         "type": "package",
         "compile": {
           "ref/net472/Assembly-CSharp-firstpass.dll": {},
@@ -616,17 +616,17 @@
         "krafs.publicizer.nuspec"
       ]
     },
-    "Krafs.Rimworld.Ref/1.5.4297": {
-      "sha512": "uhY1DK8YQB55IamhyOus6A//S47F93JiOe5ORBv+KnN9HNOanAQY8TaBMKpJKhdZj2GHYny/7rZixjv4DAKYMQ==",
+    "Krafs.Rimworld.Ref/1.5.4409": {
+      "sha512": "0Sn9Ow0hbsQ1pmwHoKmcAzhMkv/BjHrIpZOH4eyUwHx238a3+2jDqNwCggKR8E3BouNeIOQuNcyMrc78slOtaA==",
       "type": "package",
-      "path": "krafs.rimworld.ref/1.5.4297",
+      "path": "krafs.rimworld.ref/1.5.4409",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.md",
         "README.md",
         "icon.png",
-        "krafs.rimworld.ref.1.5.4297.nupkg.sha512",
+        "krafs.rimworld.ref.1.5.4409.nupkg.sha512",
         "krafs.rimworld.ref.nuspec",
         "ref/net472/Assembly-CSharp-firstpass.dll",
         "ref/net472/Assembly-CSharp.dll",
@@ -769,20 +769,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Sarg\\.nuget\\packages\\": {}
+    "C:\\Users\\Administrator\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaAnomalyExpanded-Insanity\\1.5\\Source\\VAEInsanity.csproj",
+      "projectUniqueName": "E:\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaAnomalyExpanded-Insanity\\1.5\\Source\\VAEInsanity.csproj",
       "projectName": "VAEInsanity",
-      "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaAnomalyExpanded-Insanity\\1.5\\Source\\VAEInsanity.csproj",
-      "packagesPath": "C:\\Users\\Sarg\\.nuget\\packages\\",
-      "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaAnomalyExpanded-Insanity\\1.5\\Source\\obj\\",
+      "projectPath": "E:\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaAnomalyExpanded-Insanity\\1.5\\Source\\VAEInsanity.csproj",
+      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+      "outputPath": "E:\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaAnomalyExpanded-Insanity\\1.5\\Source\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
+      "UsingMicrosoftNETSdk": false,
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Sarg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
