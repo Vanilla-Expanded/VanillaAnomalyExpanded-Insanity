@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+	<TraitDef>
+		<defName>VAEI_Inhumanized</defName>
+		<commonality>0</commonality>
+		<degreeDatas>
+			<li>
+				<label>inhumanized</label>
+				<description>{PAWN_nameDef}'s mind is dominated by the psychic patterns of the void. They are completely disconnected from human concerns of family, friendship, and love. Their experience of reality is distant and muted, guided by the psychic rhythm of a dark hyperintelligence.</description>
+				<statOffsets>
+					<VAEI_SanityGainPerDay>-0.01</VAEI_SanityGainPerDay>
+				</statOffsets>
+			</li>
+		</degreeDatas>
+	</TraitDef>
+
+	<TraitDef>
+		<defName>VAEI_VoidTouched</defName>
+		<commonality>0</commonality>
+		<degreeDatas>
+			<li>
+				<label>void touched</label>
+				<description>{PAWN_nameDef} has seen the depths of the void and drank from its essence. It lives inside them still, guiding their actions and twisting their flesh. It has turned their hair brittle and white. They no longer need sleep or comfort. The void provides for them.</description>
+				<statFactors>
+					<VAEI_SanityGainMultiplier>0.1</VAEI_SanityGainMultiplier>
+				</statFactors>
+			</li>
+		</degreeDatas>
+	</TraitDef>
+
+	<TraitDef>
+		<defName>VAEI_Germaphobe</defName>
+		<label>germaphobe</label>
+		<commonality>0</commonality>
+		<degreeDatas>
+			<li>
+				<label>germaphobe</label>
+				<description>{PAWN_nameDef} is terrified of germs and contamination, leading to excessively slow and meticulous cleaning, but due to the careful nature will never contract flu, malaria, or plague.</description>
+				<statOffsets>
+					<VAEI_SanityLossMultiplier>1</VAEI_SanityLossMultiplier>
+				</statOffsets>
+				<statFactors>
+					<CleaningSpeed>0.2</CleaningSpeed>
+				</statFactors>
+			</li>
+		</degreeDatas>
+	</TraitDef>
+	
+	<TraitDef>
+		<defName>VAEI_Noncommittal</defName>
+		<label>noncommittal</label>
+		<commonality>0</commonality>
+		<degreeDatas>
+			<li>
+				<label>noncommittal</label>
+				<description>{PAWN_nameDef} is panicly afraid of commitment. {PAWN_pronoun} will actively refuse any attachment to others, and will never form any new relationships.</description>
+				<statOffsets>
+					<VAEI_SanityLossMultiplier>1</VAEI_SanityLossMultiplier>
+				</statOffsets>
+			</li>
+		</degreeDatas>
+	</TraitDef>
+	
+	<TraitDef>
+		<defName>VAEI_Unstable</defName>
+		<label>impulsive</label>
+		<commonality>0</commonality>
+		<degreeDatas>
+			<li>
+				<label>impulsive</label>
+				<description>{PAWN_nameDef}'s emotional foundation is fragile, making {PAWN_objective} significantly more prone to crumbling under stress. {PAWN_pronoun} struggle to handle pressure, which often leads to breakdowns in challenging situations.</description>
+				<statOffsets>
+					<MentalBreakThreshold>0.12</MentalBreakThreshold>
+					<VAEI_SanityLossMultiplier>1</VAEI_SanityLossMultiplier>
+				</statOffsets>
+				<statFactors>
+					<CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">2.5</CertaintyLossFactor>
+				</statFactors>
+			</li>
+		</degreeDatas>
+	</TraitDef>
+	
+	<TraitDef>
+		<defName>VAEI_Distractable</defName>
+		<label>distractable</label>
+		<commonality>0</commonality>
+		<degreeDatas>
+			<li>
+				<label>distractable</label>
+				<description>{PAWN_nameDef} hyperfocuses on certain things when {PAWN_pronoun} feel like it, but most of the time {PAWN_pronoun} will struggle to concentrate on {PAWN_possessive} task, severely affecting {PAWN_possessive} work speed.</description>
+				<statOffsets>
+					<VAEI_SanityLossMultiplier>1</VAEI_SanityLossMultiplier>
+				</statOffsets>
+			</li>
+		</degreeDatas>
+	</TraitDef>
+	
+	<TraitDef>
+		<defName>VAEI_MoodSwings</defName>
+		<label>mood swings</label>
+		<commonality>0</commonality>
+		<degreeDatas>
+			<li>
+				<label>mood swings</label>
+				<description>{PAWN_nameDef} suffers from severe mood swings that can last anything between a day and a quadrum. One day {PAWN_pronoun} might be extremely happy, whilst the next day - extremely sad.</description>
+				<statOffsets>
+					<VAEI_SanityLossMultiplier>1</VAEI_SanityLossMultiplier>
+				</statOffsets>
+			</li>
+		</degreeDatas>
+	</TraitDef>
+
+</Defs>

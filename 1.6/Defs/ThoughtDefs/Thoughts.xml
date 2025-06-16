@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThoughtDef>
+		<defName>VAEI_VoidHarmed</defName>
+		<durationDays>3</durationDays>
+		<stackLimit>10</stackLimit>
+		<stackedEffectMultiplier>0.9</stackedEffectMultiplier>
+		<stages>
+			<li>
+				<label>void harmed</label>
+				<description>I have harmed myself for the void. I can feel the sweet embrace of darkness.</description>
+				<baseMoodEffect>1</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>VAEI_MockedMood</defName>
+		<thoughtClass>Thought_MemorySocial</thoughtClass>
+		<durationDays>2</durationDays>
+		<stackLimit>10</stackLimit>
+		<stackedEffectMultiplier>0.9</stackedEffectMultiplier>
+		<nullifyingHediffs>
+			<li>Inhumanized</li>
+		</nullifyingHediffs>
+		<stages>
+			<li>
+				<label>mocked</label>
+				<description>My insecurities were mocked! What an evil person!</description>
+				<baseMoodEffect>-8</baseMoodEffect>
+			</li>
+		</stages>
+		<thoughtToMake>VAEI_MockedMemory</thoughtToMake>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>VAEI_MockedMemory</defName>
+		<thoughtClass>Thought_MemorySocial</thoughtClass>
+		<durationDays>30</durationDays>
+		<stackLimit>300</stackLimit>
+		<stackLimitForSameOtherPawn>10</stackLimitForSameOtherPawn>
+		<stackedEffectMultiplier>0.9</stackedEffectMultiplier>
+		<stages>
+			<li>
+				<label>mocked</label>
+				<baseOpinionOffset>-20</baseOpinionOffset>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>VAEI_VileSlanderMood</defName>
+		<thoughtClass>Thought_MemorySocial</thoughtClass>
+		<durationDays>5</durationDays>
+		<stackLimit>10</stackLimit>
+		<stackedEffectMultiplier>0.9</stackedEffectMultiplier>
+		<nullifyingHediffs>
+			<li>Inhumanized</li>
+		</nullifyingHediffs>
+		<stages>
+			<li>
+				<label>vile slander</label>
+				<description>I was accused of something absolutely vile! How could they say that?</description>
+				<baseMoodEffect>-8</baseMoodEffect>
+			</li>
+		</stages>
+		<thoughtToMake>VAEI_VileSlanderMemory</thoughtToMake>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>VAEI_VileSlanderMemory</defName>
+		<thoughtClass>Thought_MemorySocial</thoughtClass>
+		<durationDays>60</durationDays>
+		<stackLimit>300</stackLimit>
+		<stackLimitForSameOtherPawn>10</stackLimitForSameOtherPawn>
+		<stackedEffectMultiplier>0.9</stackedEffectMultiplier>
+		<stages>
+			<li>
+				<label>vile slander</label>
+				<baseOpinionOffset>-25</baseOpinionOffset>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>VAEI_Suspicious</defName>
+		<thoughtClass>Thought_MemorySocial</thoughtClass>
+		<durationDays>30</durationDays>
+		<stackLimit>300</stackLimit>
+		<stackLimitForSameOtherPawn>10</stackLimitForSameOtherPawn>
+		<stages>
+			<li>
+				<label>suspicious</label>
+				<baseOpinionOffset>-5</baseOpinionOffset>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>VAEI_SanityEffectWithoutInhumanized</defName>
+		<workerClass>VAEInsanity.ThoughtWorker_SanityEffectWithoutInhumanized</workerClass>
+		<stages>
+			<li>
+				<label>sanity affected</label>
+				<description>The world begins to bend at the edges; reality feels less certain.</description>
+				<baseMoodEffect>-1</baseMoodEffect>
+			</li>
+			<li>
+				<label>sanity degraded</label>
+				<description>Things are slipping away, and whispers echo in the corners of my mind.</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+			<li>
+				<label>sanity crumbling</label>
+				<description>My grip loosens; shadows dance and the world spins uncontrollably.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+			<li>
+				<label>sanity lost</label>
+				<description>I am adrift in the void, untethered from the anchors of reality and reason.</description>
+				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>VAEI_SanityEffectWithInhumanized</defName>
+		<workerClass>VAEInsanity.ThoughtWorker_SanityEffectWithInhumanized</workerClass>
+		<stages>
+			<li>
+				<label>sane thoughts</label>
+				<description>Clarity pierces like a knife. The mundane truth is painfully dull.</description>
+				<baseMoodEffect>-1</baseMoodEffect>
+			</li>
+			<li>
+				<label>sane doubts</label>
+				<description>Doubt creeps in, questioning the chaos. Why does this clarity feel like chains?</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+			<li>
+				<label>sane feelings</label>
+				<description>Feelings of normalcy gnaw at my mind, erasing the beautiful madness.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>VAEI_KindWordsQuestion</defName>
+		<thoughtClass>Thought_MemorySocial</thoughtClass>
+		<durationDays>20</durationDays>
+		<stackLimit>10</stackLimit>
+		<stackedEffectMultiplier>0.9</stackedEffectMultiplier>
+		<stages>
+			<li>
+				<label>kind words?</label>
+				<description>I think I’ve been bestowed with kind words. I think.</description>
+				<baseMoodEffect>+4</baseMoodEffect>
+			</li>
+		</stages>
+		<thoughtToMake>VAEI_KindWordsQuestionMemory</thoughtToMake>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>VAEI_KindWordsQuestionMemory</defName>
+		<durationDays>20</durationDays>
+		<stackLimit>300</stackLimit>
+		<stackLimitForSameOtherPawn>10</stackLimitForSameOtherPawn>
+		<stackedEffectMultiplier>0.9</stackedEffectMultiplier>
+		<stages>
+			<li>
+				<label>kind words?</label>
+				<baseOpinionOffset>+10</baseOpinionOffset>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>VAEI_DeepTalkQuestion</defName>
+		<thoughtClass>Thought_MemorySocial</thoughtClass>
+		<durationDays>20</durationDays>
+		<stackLimit>300</stackLimit>
+		<stackLimitForSameOtherPawn>10</stackLimitForSameOtherPawn>
+		<stackedEffectMultiplier>0.9</stackedEffectMultiplier>
+		<nullifyingTraits>
+			<li>Psychopath</li>
+		</nullifyingTraits>
+		<stages>
+			<li>
+				<label>deep talk?</label>
+				<baseOpinionOffset>+15</baseOpinionOffset>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>VAEI_VoidDrawings</defName>
+		<thoughtClass>Thought_MemoryObservation</thoughtClass>
+		<durationDays>1</durationDays>
+		<stackLimit>10</stackLimit>
+		<stackedEffectMultiplier>0.9</stackedEffectMultiplier>
+		<nullifyingHediffs>
+			<li>Inhumanized</li>
+		</nullifyingHediffs>
+		<stages>
+			<li>
+				<label>observed void drawings</label>
+				<description>I witnessed a very eerie drawing. It feels like it speaks to me.</description>
+				<baseMoodEffect>-1</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>VAEI_Gagged</defName>
+		<thoughtClass>Thought_Situational</thoughtClass>
+		<workerClass>VAEInsanity.ThoughtWorker_Gagged</workerClass>
+		<stages>
+			<li>
+				<label>gagged</label>
+				<description>Hmpff, huff hmphhhh</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>VAEI_Restrained</defName>
+		<thoughtClass>Thought_Situational</thoughtClass>
+		<workerClass>VAEInsanity.ThoughtWorker_Restrained</workerClass>
+		<stages>
+			<li>
+				<label>restrained</label>
+				<description>I want to take off this straitjacket! I can’t do anything!</description>
+				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>VAEI_Rehumanized</defName>
+		<thoughtClass>Thought_Memory</thoughtClass>
+		<durationDays>5</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>rehumanized</label>
+				<description>It’s so good to finally feel normal again. Well, mostly normal.</description>
+				<baseMoodEffect>+50</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>VAEI_DirtyRoom</defName>
+		<thoughtClass>Thought_Situational</thoughtClass>
+		<workerClass>VAEInsanity.ThoughtWorker_DirtyRoom</workerClass>
+		<stages>
+			<li>
+				<label>slightly dirty surroundings</label>
+				<description>The room I’m in is slightly dirty. It scares me.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+			<li>
+				<label>dirty surroundings</label>
+				<description>The room I’m in is dirty. It repulses me.</description>
+				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+			<li>
+				<label>very dirty surroundings</label>
+				<description>The room I’m in is incredibly dirty. I need to leave it as soon as possible.</description>
+				<baseMoodEffect>-15</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>VAEI_MoodSwing</defName>
+		<thoughtClass>Thought_Situational</thoughtClass>
+		<workerClass>VAEInsanity.ThoughtWorker_MoodSwing</workerClass>
+		<stages>
+			<li>
+				<label>happy thoughts</label>
+				<description>I'm feeling a gentle happiness, like a quiet smile spreading through my day.</description>
+				<baseMoodEffect>+6</baseMoodEffect>
+			</li>
+			<li>
+				<label>very happy thoughts</label>
+				<description>I'm riding a wave of joy and positivity, feeling truly happy and content.</description>
+				<baseMoodEffect>+12</baseMoodEffect>
+			</li>
+			<li>
+				<label>sad thoughts</label>
+				<description>I'm feeling weighed down by a sadness that's hard to shake off.</description>
+				<baseMoodEffect>-8</baseMoodEffect>
+			</li>
+			<li>
+				<label>very sad thoughts</label>
+				<description>My heart feels crushed by an intense and deep sadness, almost too much to bear.</description>
+				<baseMoodEffect>-16</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Races Expanded - Android</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>/Defs/VREAndroids.AndroidGeneDef[defName="VREA_PsychologyDisabled"]/disablesNeeds</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/VREAndroids.AndroidGeneDef[defName="VREA_PsychologyDisabled"]</xpath>
+						<value>
+							<disablesNeeds>
+								<li>VAEI_Sanity</li>
+							</disablesNeeds>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/VREAndroids.AndroidGeneDef[defName="VREA_PsychologyDisabled"]/disablesNeeds</xpath>
+						<value>
+							<li>VAEI_Sanity</li>
+						</value>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

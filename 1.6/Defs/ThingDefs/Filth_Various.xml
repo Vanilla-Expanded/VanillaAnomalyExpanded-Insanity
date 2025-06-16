@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BaseFilth">
+    <defName>VAEI_VoidDrawing</defName>
+    <label>void drawing</label>
+	<thingClass>VAEInsanity.VoidDrawing</thingClass>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>VoidDrawings</texPath>
+      <shaderType>TransparentBelowSnow</shaderType>
+    </graphicData>
+    <statBases>
+      <Beauty>0</Beauty>
+    </statBases>
+    <filth>
+      <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+      <disappearsInDays>35~40</disappearsInDays>
+      <cleaningWorkToReduceThickness>25</cleaningWorkToReduceThickness>
+      <canFilthAttach>false</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Dirt</cleaningSound>
+    </filth>
+  </ThingDef>
+
+</Defs>

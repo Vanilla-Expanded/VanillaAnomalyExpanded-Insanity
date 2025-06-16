@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Traits Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>/Defs/TraitDef[defName="VTE_AbsentMinded"]/degreeDatas/li/statOffsets</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/TraitDef[defName="VTE_AbsentMinded"]/degreeDatas/li</xpath>
+						<value>
+							<statOffsets>
+								<VAEI_SanityMultiplier>0.10</VAEI_SanityMultiplier>
+							</statOffsets>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/TraitDef[defName="VTE_AbsentMinded"]/degreeDatas/li/statOffsets</xpath>
+						<value>
+							<VAEI_SanityMultiplier>0.10</VAEI_SanityMultiplier>
+						</value>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>/Defs/TraitDef[defName="VTE_Eccentric"]/degreeDatas/li/statOffsets</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/TraitDef[defName="VTE_Eccentric"]/degreeDatas/li</xpath>
+						<value>
+							<statOffsets>
+								<VAEI_SanityLossMultiplier>0.40</VAEI_SanityLossMultiplier>
+							</statOffsets>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/TraitDef[defName="VTE_Eccentric"]/degreeDatas/li/statOffsets</xpath>
+						<value>
+							<VAEI_SanityLossMultiplier>0.40</VAEI_SanityLossMultiplier>
+						</value>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>/Defs/TraitDef[defName="VTE_Coward"]/degreeDatas/li/statOffsets</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/TraitDef[defName="VTE_Coward"]/degreeDatas/li</xpath>
+						<value>
+							<statOffsets>
+								<VAEI_SanityLossMultiplier>0.05</VAEI_SanityLossMultiplier>
+							</statOffsets>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/TraitDef[defName="VTE_Coward"]/degreeDatas/li/statOffsets</xpath>
+						<value>
+							<VAEI_SanityLossMultiplier>0.05</VAEI_SanityLossMultiplier>
+						</value>
+					</match>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/TraitDef[defName="VTE_Brave"]/degreeDatas/li/statOffsets</xpath>
+					<value>
+						<VAEI_SanityLossMultiplier>-0.10</VAEI_SanityLossMultiplier>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/TraitDef[defName="VTE_Dunce"]/degreeDatas/li/statFactors</xpath>
+					<value>
+						<VAEI_SanityMultiplier>0.75</VAEI_SanityMultiplier>
+					</value>
+				</li>
+
+
+				<li Class="PatchOperationConditional">
+					<xpath>/Defs/TraitDef[defName="VTE_Anxious"]/degreeDatas/li/statOffsets</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/TraitDef[defName="VTE_Anxious"]/degreeDatas/li</xpath>
+						<value>
+							<statOffsets>
+								<VAEI_SanityGainMultiplier>-0.25</VAEI_SanityGainMultiplier>
+							</statOffsets>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/TraitDef[defName="VTE_Anxious"]/degreeDatas/li/statOffsets</xpath>
+						<value>
+							<VAEI_SanityGainMultiplier>-0.25</VAEI_SanityGainMultiplier>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/TraitDef[defName="VTE_Prodigy"]/degreeDatas/li/statOffsets</xpath>
+					<value>
+						<VAEI_SanityMultiplier>0.25</VAEI_SanityMultiplier>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/TraitDef[defName="VTE_MadSurgeon"]/degreeDatas/li/statOffsets</xpath>
+					<value>
+						<VAEI_SanityLossMultiplier>0.50</VAEI_SanityLossMultiplier>
+					</value>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>/Defs/TraitDef[defName="VTE_Insomniac"]/degreeDatas/li/statOffsets</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/TraitDef[defName="VTE_Insomniac"]/degreeDatas/li</xpath>
+						<value>
+							<statOffsets>
+								<VAEI_SanityLossMultiplier>0.25</VAEI_SanityLossMultiplier>
+							</statOffsets>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/TraitDef[defName="VTE_Insomniac"]/degreeDatas/li/statOffsets</xpath>
+						<value>
+							<VAEI_SanityLossMultiplier>0.25</VAEI_SanityLossMultiplier>
+						</value>
+					</match>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/TraitDef[defName="VTE_Desensitized"]/degreeDatas/li/statFactors</xpath>
+					<value>
+						<VAEI_SanityMultiplier>0.75</VAEI_SanityMultiplier>
+					</value>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>/Defs/TraitDef[defName="VTE_Schizoid"]/degreeDatas/li/statFactors</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/TraitDef[defName="VTE_Schizoid"]/degreeDatas/li</xpath>
+						<value>
+							<statFactors>
+								<VAEI_SanityMultiplier>2.0</VAEI_SanityMultiplier>
+							</statFactors>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/TraitDef[defName="VTE_Schizoid"]/degreeDatas/li/statFactors</xpath>
+						<value>
+							<VAEI_SanityMultiplier>2.0</VAEI_SanityMultiplier>
+						</value>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

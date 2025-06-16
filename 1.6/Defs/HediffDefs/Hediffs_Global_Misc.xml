@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<HediffDef>
+		<defName>VAEI_SacrificialHediff</defName>
+		<label>sacrificial mental state</label>
+		<description>A sacrificial mental state which will end upon successful arrest or death.</description>
+		<lethalSeverity>1</lethalSeverity>
+		<hediffClass>VAEInsanity.Hediff_Sacrificial</hediffClass>
+		<initialSeverity>0.01</initialSeverity>
+		<isBad>true</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>6.5</severityPerDay>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+		<stages>
+			<li>
+				<painFactor>0.0</painFactor>
+				<becomeVisible>False</becomeVisible>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>VAEI_Focused</defName>
+		<label>focused</label>
+		<description>Extreme mental focus on the tasks at hand, greatly increasing the productivity.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<isBad>False</isBad>
+		<comps>
+			<li>
+				<compClass>VAEInsanity.HediffComp_CycleFocusDistracted</compClass>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<WorkSpeedGlobal>0.50</WorkSpeedGlobal>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>VAEI_Distracted</defName>
+		<label>distracted</label>
+		<description>Severe loss of focus resulting in a greatly decreased work speed, caused by distractable trait.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<isBad>False</isBad>
+		<comps>
+			<li>
+				<compClass>VAEInsanity.HediffComp_CycleFocusDistracted</compClass>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<WorkSpeedGlobal>-0.75</WorkSpeedGlobal>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>VAEI_MoodSwing</defName>
+		<label>mood swing</label>
+		<description>This pawn is experiencing mood swings, rapidly shifting between feelings of joy and sadness.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+			<li>
+				<compClass>VAEInsanity.HediffComp_MoodSwingCycle</compClass>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>VAEI_JoinedCult</defName>
+		<label>joined cult</label>
+		<description>.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>

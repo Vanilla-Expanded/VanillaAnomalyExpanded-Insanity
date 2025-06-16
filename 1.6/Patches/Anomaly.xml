@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/StatDef[defName="EntityStudyRate"]/parts</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/StatDef[defName="EntityStudyRate"]</xpath>
+			<value>
+				<parts>
+
+				</parts>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/StatDef[defName="EntityStudyRate"]/parts</xpath>
+		<value>
+			<li Class="VAEInsanity.StatPart_Sanity">
+				<factors>
+					<li>
+						<min>0.75</min>
+						<max>1.0</max>
+						<factor>1.0</factor>
+					</li>
+					<li>
+						<min>0.50</min>
+						<max>0.75</max>
+						<factor>1.25</factor>
+					</li>
+					<li>
+						<min>0.25</min>
+						<max>0.50</max>
+						<factor>1.50</factor>
+					</li>
+					<li>
+						<min>0.0</min>
+						<max>0.25</max>
+						<factor>1.75</factor>
+					</li>
+				</factors>
+			</li>
+		</value>
+	</Operation>
+
+</Patch>

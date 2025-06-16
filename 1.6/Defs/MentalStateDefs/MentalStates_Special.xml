@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<MentalStateDef ParentName="BaseMentalState">
+		<defName>VAEI_Madness</defName>
+		<label>Madness</label>
+		<stateClass>VAEInsanity.MentalState_Madness</stateClass>
+		<category>Misc</category>
+		<nameColor>(0.65, 0.9, 0.93)</nameColor>
+		<baseInspectLine>Mental state: Madness</baseInspectLine>
+		<beginLetter>{PAWN_nameDef} has lost the last connection to {PAWN_possessive} former self. {PAWN_possessive} regard for health, family, friendship, and love has been shattered by continuous exposure to the dark, corrupting psychic forces of the void.\n\n{PAWN_pronoun} will now enter a severe period of madness for several days as {PAWN_pronoun} struggles with {PAWN_possessive} altered mental state and the grim realization of the deepening nightmare. While there's a chance {PAWN_pronoun} might overcome this crisis and restore {PAWN_possessive} sanity, it's far more likely that {PAWN_pronoun} will be completely inhumanized.</beginLetter>
+		<blockNormalThoughts>true</blockNormalThoughts>
+		<downedCanDo>true</downedCanDo>
+		<recoverFromDowned>false</recoverFromDowned>
+		<recoverFromCollapsingExhausted>false</recoverFromCollapsingExhausted>
+		<inCaravanCanDo>true</inCaravanCanDo>
+		<unspawnedNotInCaravanCanDo>true</unspawnedNotInCaravanCanDo>
+		<blockInteractionInitiationExcept>
+			<li>Insult</li>
+			<li>Slight</li>
+			<li>VAEI_ViciousMockery</li>
+			<li>VAEI_Slander</li>
+			<li>VAEI_VoidSelfHarm</li>
+		</blockInteractionInitiationExcept>
+		<blockInteractionRecipientExcept>
+			<li>Insult</li>
+			<li>Slight</li>
+		</blockInteractionRecipientExcept>
+	</MentalStateDef>
+
+	<MentalStateDef ParentName="BaseMentalState">
+		<defName>VAEI_Sacrificial</defName>
+		<stateClass>VAEInsanity.MentalState_Sacrificial</stateClass>
+		<label>sacrificial</label>
+		<category>Misc</category>
+		<blockNormalThoughts>true</blockNormalThoughts>
+		<nameColor>(0.65, 0.9, 0.93)</nameColor>
+		<minTicksBeforeRecovery>70000</minTicksBeforeRecovery>
+		<maxTicksBeforeRecovery>90000</maxTicksBeforeRecovery>
+		<baseInspectLine>Mental state: Sacrificial</baseInspectLine>
+		<inCaravanCanDo>true</inCaravanCanDo>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</MentalStateDef>
+
+	<MentalBreakDef>
+		<defName>VAEI_VoidDrawing</defName>
+		<mentalState>VAEI_VoidDrawing</mentalState>
+		<baseCommonality>0</baseCommonality>
+		<workerClass>VAEInsanity.MentalBreakWorker_VoidDrawing</workerClass>
+		<intensity>Minor</intensity>
+	</MentalBreakDef>
+
+	<MentalStateDef ParentName="BaseMentalState">
+		<defName>VAEI_VoidDrawing</defName>
+		<stateClass>VAEInsanity.MentalState_VoidDrawing</stateClass>
+		<label>void drawing</label>
+		<category>Misc</category>
+		<nameColor>(0.65, 0.9, 0.93)</nameColor>
+		<minTicksBeforeRecovery>6000</minTicksBeforeRecovery>
+		<maxTicksBeforeRecovery>10000</maxTicksBeforeRecovery>
+		<baseInspectLine>Mental state: Void Drawing</baseInspectLine>
+		<inCaravanCanDo>false</inCaravanCanDo>
+		<recoveryMtbDays>0.033</recoveryMtbDays>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</MentalStateDef>
+
+	<MentalBreakDef>
+		<defName>VAEI_ViciousMockery</defName>
+		<mentalState>VAEI_ViciousMockery</mentalState>
+		<baseCommonality>0</baseCommonality>
+		<intensity>Minor</intensity>
+		<workerClass>VAEInsanity.MentalBreakWorker_ViciousMockeryAll</workerClass>
+	</MentalBreakDef>
+
+	<MentalStateDef ParentName="BaseMentalState">
+		<defName>VAEI_ViciousMockery</defName>
+		<stateClass>MentalState_InsultingSpreeAll</stateClass>
+		<workerClass>MentalStateWorker_InsultingSpreeAll</workerClass>
+		<label>mockery spree</label>
+		<category>Malicious</category>
+		<colonistsOnly>true</colonistsOnly>
+		<blockInteractionInitiationExcept>
+			<li>Insult</li>
+			<li>VAEI_ViciousMockery</li>
+		</blockInteractionInitiationExcept>
+		<blockInteractionRecipientExcept>
+			<li>Insult</li>
+			<li>VAEI_ViciousMockery</li>
+		</blockInteractionRecipientExcept>
+		<blockRandomInteraction>true</blockRandomInteraction>
+		<requiredCapacities>
+			<li>Talking</li>
+		</requiredCapacities>
+		<minTicksBeforeRecovery>24000</minTicksBeforeRecovery>
+		<maxTicksBeforeRecovery>45000</maxTicksBeforeRecovery>
+		<recoveryMtbDays>0.166</recoveryMtbDays>
+		<recoverFromSleep>true</recoverFromSleep>
+		<moodRecoveryThought>Catharsis</moodRecoveryThought>
+		<blockNormalThoughts>true</blockNormalThoughts>
+		<nameColor>(0.98,0.48,0.16)</nameColor>
+		<recoveryMessage>{0} is no longer on an mockery spree.</recoveryMessage>
+		<beginLetter>{0} is on an mockery spree.\n\n[PAWN_pronoun] will wander around, randomly mocking others.</beginLetter>
+		<beginLetterDef>NegativeEvent</beginLetterDef>
+		<baseInspectLine>Mental state: Mockery spree</baseInspectLine>
+		<allowBeatfire>true</allowBeatfire>
+	</MentalStateDef>
+
+	<MentalBreakDef>
+		<defName>VAEI_JoinCult</defName>
+		<mentalState>VAEI_JoinCult</mentalState>
+		<intensity>Extreme</intensity>
+		<workerClass>VAEInsanity.MentalBreakWorker_JoinCult</workerClass>
+		<baseCommonality>1</baseCommonality>
+		<questLodgersCanDo>false</questLodgersCanDo>
+		<commonalityFactorPerPopulationCurve>
+			<points>
+				<li>(7, 0)</li>
+				<li>(12, 1)</li>
+			</points>
+		</commonalityFactorPerPopulationCurve>
+	</MentalBreakDef>
+
+	<MentalStateDef ParentName="BaseMentalState">
+		<defName>VAEI_JoinCult</defName>
+		<label>joining the cult</label>
+		<stateClass>VAEInsanity.MentalState_JoinCult</stateClass>
+		<category>Misc</category>
+		<prisonersCanDo>false</prisonersCanDo>
+		<slavesCanDo>false</slavesCanDo>
+		<moodRecoveryThought>Catharsis</moodRecoveryThought>
+		<blockNormalThoughts>true</blockNormalThoughts>
+		<nameColor>(0.65, 0.9, 0.93)</nameColor>
+		<beginLetterLabel>joining the cult</beginLetterLabel>
+		<beginLetter>{0} has succumbed to the void influence.\n\n[PAWN_pronoun] has decided to leave and join the cult of the void. You can try to arrest [PAWN_objective] as [PAWN_pronoun] leaves. Otherwise, you may still see [PAWN_objective] next time the cultists decide to attack you.</beginLetter>
+		<beginLetterDef>NegativeEvent</beginLetterDef>
+		<recoveryMessage>{0} has had a change of heart and is coming back to the colony.</recoveryMessage>
+		<baseInspectLine>Mental state: Joining the cult</baseInspectLine>
+		<allowBeatfire>true</allowBeatfire>
+		<escapingPrisonersIgnore>true</escapingPrisonersIgnore>
+	</MentalStateDef>
+</Defs>

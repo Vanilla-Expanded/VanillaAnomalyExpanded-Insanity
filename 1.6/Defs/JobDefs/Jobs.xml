@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<JobDef>
+		<defName>VAEI_ViciousMockJob</defName>
+		<driverClass>VAEInsanity.JobDriver_ViciousMock</driverClass>
+		<reportString>Mocking TargetA viciously.</reportString>
+	</JobDef>
+
+	<JobDef>
+		<defName>VAEI_SlanderJob</defName>
+		<driverClass>VAEInsanity.JobDriver_Slander</driverClass>
+		<reportString>Slandering TargetA.</reportString>
+	</JobDef>
+
+	<JobDef>
+		<defName>VAEI_VoidDrawingJob</defName>
+		<driverClass>VAEInsanity.JobDriver_VoidDrawing</driverClass>
+		<reportString>Void drawing.</reportString>
+	</JobDef>
+	
+</Defs>

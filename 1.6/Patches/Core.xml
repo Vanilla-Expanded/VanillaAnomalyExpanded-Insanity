@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThinkTreeDef[defName="MentalStateNonCritical"]/thinkRoot/subNodes/li[@Class="ThinkNode_ConditionalMentalStates"]/states/li[contains(text(), 'HumanityBreak')]/..</xpath>
+		<value>
+			<li>VAEI_Madness</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThinkTreeDef[defName="MentalStateNonCritical"]/thinkRoot/subNodes/li[@Class="ThinkNode_ConditionalMentalStates"]/states/li[contains(text(), 'Wander_Psychotic')]/..</xpath>
+		<value>
+			<li>VAEI_Sacrificial</li>
+			<li>VAEI_VoidDrawing</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/ThinkTreeDef[defName="MentalStateNonCritical"]/thinkRoot/subNodes/li[@Class="JobGiver_PlayWithGoldenCube"]</xpath>
+		<order>Append</order>
+		<value>
+				<li Class="ThinkNode_ConditionalMentalState">
+					<state>VAEI_ViciousMockery</state>
+					<subNodes>
+						<li Class="VAEInsanity.JobGiver_ViciousMockery"/>
+						<li Class="ThinkNode_PrioritySorter">
+							<subNodes>
+								<li Class="JobGiver_GetFood">
+									<maxLevelPercentage>0.05</maxLevelPercentage>
+								</li>
+								<li Class="JobGiver_GetRest">
+									<maxLevelPercentage>0.15</maxLevelPercentage>
+								</li>
+							</subNodes>
+						</li>
+						<li Class="JobGiver_WanderColony"/>
+					</subNodes>
+				</li>
+				<li Class="ThinkNode_ConditionalMentalState">
+					<state>VAEI_JoinCult</state>
+					<subNodes>
+						<li Class="JobGiver_ExitMapRandom">
+							<defaultLocomotion>Walk</defaultLocomotion>
+						</li>
+						<li Class="JobGiver_WanderAnywhere">
+							<maxDanger>Deadly</maxDanger>
+						</li>
+				</subNodes>
+				</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HediffDef[defName = "PsychiteTeaHigh"]/stages/li/statFactors</xpath>
+		<value>
+			<VAEI_SanityMultiplier>2</VAEI_SanityMultiplier>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraitDef[defName = "TooSmart"]/degreeDatas/li/statOffsets</xpath>
+		<value>
+			<VAEI_SanityLossMultiplier>-0.75</VAEI_SanityLossMultiplier>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraitDef[defName="Psychopath"]/degreeDatas/li/statFactors</xpath>
+		<value>
+			<VAEI_SanityMultiplier>0.5</VAEI_SanityMultiplier>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraitDef[defName="Nerves"]/degreeDatas/li[label="iron-willed"]/statOffsets</xpath>
+		<value>
+			<VAEI_SanityLossMultiplier>-0.50</VAEI_SanityLossMultiplier>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraitDef[defName="Nerves"]/degreeDatas/li[label="steadfast"]/statOffsets</xpath>
+		<value>
+			<VAEI_SanityLossMultiplier>-0.25</VAEI_SanityLossMultiplier>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraitDef[defName="Nerves"]/degreeDatas/li[label="nervous"]/statOffsets</xpath>
+		<value>
+			<VAEI_SanityGainMultiplier>-0.25</VAEI_SanityGainMultiplier>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraitDef[defName="Nerves"]/degreeDatas/li[label="volatile"]/statOffsets</xpath>
+		<value>
+			<VAEI_SanityGainMultiplier>-0.50</VAEI_SanityGainMultiplier>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraitDef[defName="Neurotic"]/degreeDatas/li[label="neurotic"]/statOffsets</xpath>
+		<value>
+			<VAEI_SanityLossMultiplier>0.15</VAEI_SanityLossMultiplier>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraitDef[defName="Neurotic"]/degreeDatas/li[label="very neurotic"]/statOffsets</xpath>
+		<value>
+			<VAEI_SanityMultiplier>0.30</VAEI_SanityMultiplier>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/TraitDef[defName="TorturedArtist"]/degreeDatas/li/statOffsets</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/TraitDef[defName="TorturedArtist"]/degreeDatas/li</xpath>
+			<value>
+				<statOffsets>
+					<VAEI_SanityLossMultiplier>0.25</VAEI_SanityLossMultiplier>
+				</statOffsets>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/TraitDef[defName="TorturedArtist"]/degreeDatas/li/statOffsets</xpath>
+			<value>
+				<VAEI_SanityLossMultiplier>0.25</VAEI_SanityLossMultiplier>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/StatDef[defName="MentalBreakThreshold"]/parts</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/StatDef[defName="MentalBreakThreshold"]</xpath>
+			<value>
+				<parts>
+</parts>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/StatDef[defName="MentalBreakThreshold"]/parts</xpath>
+		<value>
+			<li Class="VAEInsanity.StatPart_Sanity">
+				<offsets>
+					<li>
+						<min>0.75</min>
+						<max>1.0</max>
+						<offset>0.15</offset>
+						<inhumanized>true</inhumanized>
+					</li>
+					<li>
+						<min>0.50</min>
+						<max>0.75</max>
+						<offset>0.08</offset>
+						<inhumanized>true</inhumanized>
+					</li>
+					<li>
+						<min>0.25</min>
+						<max>0.50</max>
+						<offset>0.04</offset>
+						<inhumanized>true</inhumanized>
+					</li>
+					<li>
+						<min>0.0</min>
+						<max>0.25</max>
+						<offset>0.00</offset>
+						<inhumanized>true</inhumanized>
+					</li>
+					<li>
+						<min>0.75</min>
+						<max>1.0</max>
+						<offset>0.00</offset>
+						<inhumanized>false</inhumanized>
+					</li>
+					<li>
+						<min>0.50</min>
+						<max>0.75</max>
+						<offset>0.04</offset>
+						<inhumanized>false</inhumanized>
+					</li>
+					<li>
+						<min>0.25</min>
+						<max>0.50</max>
+						<offset>0.08</offset>
+						<inhumanized>false</inhumanized>
+					</li>
+					<li>
+						<min>0.0</min>
+						<max>0.25</max>
+						<offset>0.15</offset>
+						<inhumanized>false</inhumanized>
+					</li>
+				</offsets>
+			</li>
+		</value>
+	</Operation>
+</Patch>

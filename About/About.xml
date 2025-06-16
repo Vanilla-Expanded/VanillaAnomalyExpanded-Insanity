@@ -3,7 +3,7 @@
 	<name>Vanilla Anomaly Expanded - Insanity</name>
 	<author>Oskar Potocki, Taranchuk</author>
 	<supportedVersions>
-		<li>1.5</li>
+		<li>1.5</li><li>1.6</li>
 	</supportedVersions>
 	<modIconPath IgnoreIfNoMatchingField="True">UI/VELogo</modIconPath>
 	<packageId>VanillaExpanded.VAnomalyEInsanity</packageId>
@@ -27,8 +27,7 @@
 		</li>
 	</modDependencies>
 	<loadAfter>
-		<li>brrainz.harmony</li>
-		<li>Ludeon.RimWorld.Anomaly</li>
+		
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 	</loadAfter>
 	<description>Vanilla Anomaly Expanded - Sanity introduces a new gameplay mechanic centered around a "Sanity" system, in many ways similar to Sanity present in other video games, representing your characters' mental and emotional connection to human concerns. You’ll need to manage the sanity levels of your colonists, as low sanity leads to detachment from human priorities, and may eventually lead to inhumanization.

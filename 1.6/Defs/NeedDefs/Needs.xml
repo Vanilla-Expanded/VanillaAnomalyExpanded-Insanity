@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+   <NeedDef>
+    <defName>VAEI_Sanity</defName>
+    <needClass>VAEInsanity.Need_Sanity</needClass>
+    <label>sanity</label>
+    <description>Sanity represents how detached someone is from their humanity due to being exposed to unexplainable void phenomena. Low sanity will eventually lead to madness, which may end up with inhumanization. Low sanity will also twist any social interaction the person is in, potentially spreading their madness among others.</description>
+    <minIntelligence>Humanlike</minIntelligence>
+    <major>true</major>
+    <baseLevel>1</baseLevel>
+    <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+    <listPriority>10</listPriority>
+  </NeedDef>
+
+  
+</Defs>

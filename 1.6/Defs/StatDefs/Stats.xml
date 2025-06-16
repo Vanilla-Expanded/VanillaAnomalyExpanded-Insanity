@@ -1,0 +1,43 @@
+<Defs>
+
+	<StatDef Name="VAEI_SanityStatBase" Abstract="True">
+		<category>BasicsPawn</category>
+		<toStringStyle>PercentTwo</toStringStyle>
+	</StatDef>
+
+	<StatDef ParentName="VAEI_SanityStatBase">
+		<defName>VAEI_SanityGainPerDay</defName>
+		<label>sanity gain per day</label>
+		<description>text.todo</description>
+		<defaultBaseValue>0</defaultBaseValue>
+		<hideAtValue>0</hideAtValue>
+		<parts>
+			<li Class="VAEInsanity.StatPart_SanityNeedOffset"></li>
+		</parts>
+	</StatDef>
+
+	<StatDef ParentName="VAEI_SanityStatBase">
+		<defName>VAEI_SanityGainMultiplier</defName>
+		<label>sanity gain multiplier</label>
+		<description>text.todo</description>
+		<defaultBaseValue>1</defaultBaseValue>
+		<hideAtValue>1</hideAtValue>
+	</StatDef>
+
+	<StatDef ParentName="VAEI_SanityStatBase">
+		<defName>VAEI_SanityLossMultiplier</defName>
+		<label>sanity loss multiplier</label>
+		<description>text.todo</description>
+		<defaultBaseValue>1</defaultBaseValue>
+		<hideAtValue>1</hideAtValue>
+	</StatDef>
+	
+	<StatDef ParentName="VAEI_SanityStatBase">
+		<defName>VAEI_SanityMultiplier</defName>
+		<label>sanity multiplier</label>
+		<description>text.todo</description>
+		<defaultBaseValue>1</defaultBaseValue>
+		<hideAtValue>1</hideAtValue>
+	</StatDef>
+	
+</Defs>
