@@ -24,7 +24,7 @@ namespace VAEInsanity
         public override void MentalStateTick(int delta)
         {
             base.MentalStateTick(delta);
-            nextSelfHarmTicks--;
+            nextSelfHarmTicks -= delta;
             if (nextSelfHarmTicks <= 0)
             {
                 nextSelfHarmTicks = new IntRange(300, 500).RandomInRange;

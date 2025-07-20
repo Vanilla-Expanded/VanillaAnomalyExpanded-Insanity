@@ -38,7 +38,7 @@ namespace VAEInsanity
             {
                 return;
             }
-            if (pawn.IsHashIntervalTick(30))
+            if (pawn.IsHashIntervalTick(30, delta))
             {
                 age += 30;
                 if (age >= forceRecoverAfterTicks)
@@ -58,10 +58,10 @@ namespace VAEInsanity
                 {
                     if (pawn.Downed is false)
                     {
-                        ticksToRamble--;
-                        ticksToMock--;
-                        ticksToSland--;
-                        ticksToSelfHarm--;
+                        ticksToRamble -= delta;
+                        ticksToMock -= delta;
+                        ticksToSland -= delta;
+                        ticksToSelfHarm -= delta;
                         if (ticksToMock <= 0)
                         {
                             ticksToMock = SetTicks(4f, 8f);

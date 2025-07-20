@@ -18,7 +18,7 @@ namespace VAEInsanity
         public override void MentalStateTick(int delta)
         {
             base.MentalStateTick(delta);
-            if (pawn.Spawned && pawn.IsHashIntervalTick(30) && Find.TickManager.TicksGame >= nextDrawingTick)
+            if (pawn.Spawned && pawn.IsHashIntervalTick(30, delta) && Find.TickManager.TicksGame >= nextDrawingTick)
             {
                 StartVoidDrawingJob();
             }
