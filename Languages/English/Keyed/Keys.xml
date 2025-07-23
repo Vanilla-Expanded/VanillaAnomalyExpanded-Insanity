@@ -50,7 +50,7 @@
 	<VAEI_ObservingVoidDrawings>Observing void drawings</VAEI_ObservingVoidDrawings>
 	<VAEI_Wearing>Wearing {0}</VAEI_Wearing>
 	<VAEI_Rehumanized>Rehumanized: {PAWN_nameDef}</VAEI_Rehumanized>
-	<VAEI_RehumanizedDesc>Because {PAWN_nameDef} regained {PAWN_objective} sanity, {PAWN_pronoun} became rehumanized. {PAWN_objective} Inhumanized trait has been replaced with {0}.
+	<VAEI_RehumanizedDesc>Because {PAWN_nameDef} regained {PAWN_possessive} sanity, {PAWN_pronoun} became rehumanized. {PAWN_objective} Inhumanized trait has been replaced with {0}.
 
 {1}
 

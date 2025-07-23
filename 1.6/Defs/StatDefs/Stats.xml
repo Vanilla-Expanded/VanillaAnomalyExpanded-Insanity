@@ -8,7 +8,7 @@
 	<StatDef ParentName="VAEI_SanityStatBase">
 		<defName>VAEI_SanityGainPerDay</defName>
 		<label>sanity gain per day</label>
-		<description>text.todo</description>
+		<description>Amount of sanity that this person will gain per day.</description>
 		<defaultBaseValue>0</defaultBaseValue>
 		<hideAtValue>0</hideAtValue>
 		<parts>
@@ -19,7 +19,7 @@
 	<StatDef ParentName="VAEI_SanityStatBase">
 		<defName>VAEI_SanityGainMultiplier</defName>
 		<label>sanity gain multiplier</label>
-		<description>text.todo</description>
+		<description>The amount of sanity that this person will gain per day will be multiplied by this factor.</description>
 		<defaultBaseValue>1</defaultBaseValue>
 		<hideAtValue>1</hideAtValue>
 	</StatDef>
@@ -27,7 +27,7 @@
 	<StatDef ParentName="VAEI_SanityStatBase">
 		<defName>VAEI_SanityLossMultiplier</defName>
 		<label>sanity loss multiplier</label>
-		<description>text.todo</description>
+		<description>The amount of sanity that this person will lose per day will be multiplied by this factor.</description>
 		<defaultBaseValue>1</defaultBaseValue>
 		<hideAtValue>1</hideAtValue>
 	</StatDef>
@@ -35,7 +35,7 @@
 	<StatDef ParentName="VAEI_SanityStatBase">
 		<defName>VAEI_SanityMultiplier</defName>
 		<label>sanity multiplier</label>
-		<description>text.todo</description>
+		<description>A flat multiplier to all sanity gains and losses for this person.</description>
 		<defaultBaseValue>1</defaultBaseValue>
 		<hideAtValue>1</hideAtValue>
 	</StatDef>

@@ -159,14 +159,14 @@ namespace VAEInsanity
         {
             if (pawn.TryGetSanity(out var need))
             {
-                var lastRecord = need.records.LastOrDefault();
+                var lastRecord = need?.records.LastOrDefault();
                 if (lastRecord != null && lastRecord.reason == reason)
                 {
                     lastRecord.UpdateRecord(sanityGain);
                 }
                 else
                 {
-                    need.GainSanity(sanityGain, reason, doMessage: false);
+                    need?.GainSanity(sanityGain, reason, doMessage: false);
                 }
             }
         }

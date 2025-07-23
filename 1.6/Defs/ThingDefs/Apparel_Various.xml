@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
 	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>VAEI_Apparel_Gag</defName>
 		<label>gag</label>
@@ -56,74 +55,70 @@
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		</recipeMaker>
 	</ThingDef>
-
-
-Manipulation: x0.0
+	<!--Manipulation: x0.0
 Effectively should prevent the wearer from harming anyone.
 It should also not allow the wearer to equip any weapons.
 It should effectively stop following mental breaks from happening:
 Void drawing
-Sacrificial
-
-
-<ThingDef ParentName="ApparelMakeableBase">
-    <defName>VAEI_Apparel_StraitJacket</defName>
-    <label>straitjacket</label>
-    <description>An uncomfortable jacket with crossed sleeves that restrain the movement of the wearer. It psychologically suppresses them, reducing the chance of a slave rebellion. It also prevents the wearer from doing any harm to themselves and others by removing their ability to move their arms.</description>
-    <graphicData>
-        <texPath>StraightJacket/StraightJacket</texPath>
-        <graphicClass>Graphic_Single</graphicClass>
-        <drawSize>1.0</drawSize>
-    </graphicData>
-    <techLevel>Medieval</techLevel>
-    <costStuffCount>80</costStuffCount>
-    <stuffCategories>
-        <li>Fabric</li>
-        <li>Leathery</li>
-    </stuffCategories>
-    <thingCategories>
-        <li>ApparelMisc</li>
-    </thingCategories>
-    <statBases>
-        <MaxHitPoints>150</MaxHitPoints>
-        <WorkToMake>10000</WorkToMake>
-        <Mass>2.3</Mass>
+Sacrificial-->
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>VAEI_Apparel_StraitJacket</defName>
+		<label>straitjacket</label>
+		<description>An uncomfortable jacket with crossed sleeves that restrain the movement of the wearer. It psychologically suppresses them, reducing the chance of a slave rebellion. It also prevents the wearer from doing any harm to themselves and others by removing their ability to move their arms.</description>
+		<graphicData>
+			<texPath>StraightJacket/StraightJacket</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.0</drawSize>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<costStuffCount>80</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<thingCategories>
+			<li>ApparelMisc</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>2.3</Mass>
 			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>1.6</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
-    </statBases>
-    <equippedStatOffsets>
-        <MoveSpeed>-1.0</MoveSpeed>
-        <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.25</SlaveSuppressionOffset>
-    </equippedStatOffsets>
-    <apparel>
-        <countsAsClothingForNudity>true</countsAsClothingForNudity>
-        <bodyPartGroups>
-            <li>Torso</li>
-            <li>Neck</li>
-            <li>Shoulders</li>
-            <li>Arms</li>
-        </bodyPartGroups>
-        <wornGraphicPath>StraightJacket/StraightJacket</wornGraphicPath>
-        <layers>
-            <li>Shell</li>
-        </layers>
-        <defaultOutfitTags>
-            <li>Worker</li>
-            <li>Soldier</li>
-        </defaultOutfitTags>
-        <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
-        <tags>
-            <li>VAE_Straitjacket</li>
-        </tags>
-        <developmentalStageFilter>Adult</developmentalStageFilter>
-    </apparel>
-    <tradeTags>
-        <li>BasicClothing</li>
-    </tradeTags>
-    <recipeMaker>
-        <researchPrerequisite>ComplexClothing</researchPrerequisite>
-        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-    </recipeMaker>
-</ThingDef>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-1.0</MoveSpeed>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.25</SlaveSuppressionOffset>
+		</equippedStatOffsets>
+		<apparel>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<wornGraphicPath>StraightJacket/StraightJacket</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+			<tags>
+				<li>VAE_Straitjacket</li>
+			</tags>
+			<developmentalStageFilter>Adult</developmentalStageFilter>
+		</apparel>
+		<tradeTags>
+			<li>BasicClothing</li>
+		</tradeTags>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		</recipeMaker>
+	</ThingDef>
 </Defs>

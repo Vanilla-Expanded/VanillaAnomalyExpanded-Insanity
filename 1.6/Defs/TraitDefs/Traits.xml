@@ -55,7 +55,7 @@
 		<degreeDatas>
 			<li>
 				<label>noncommittal</label>
-				<description>{PAWN_nameDef} is panicly afraid of commitment. {PAWN_pronoun} will actively refuse any attachment to others, and will never form any new relationships.</description>
+				<description>{PAWN_nameDef} is desperately afraid of commitment. {PAWN_pronoun} will actively refuse any attachment to others, and will never form any new relationships.</description>
 				<statOffsets>
 					<VAEI_SanityLossMultiplier>1</VAEI_SanityLossMultiplier>
 				</statOffsets>
