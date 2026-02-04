@@ -34,6 +34,7 @@
 	<VAEI_PitgateCollapsed>the pit gate collapsing</VAEI_PitgateCollapsed>
 	<VAEI_Attending>Attending {0}</VAEI_Attending>
 	<VAEI_Meditating>Meditating</VAEI_Meditating>
+	<VAEI_VoidWeapon>Weapon with void inscriptions</VAEI_VoidWeapon>
 	<VAEI_VoidClosing>the Void closing</VAEI_VoidClosing>
 	<VAEI_SanityLoss>It occurred due to sanity loss to 0%.</VAEI_SanityLoss>
 	<VAEI_Inhumanized>Inhumanized: {PAWN_nameDef}</VAEI_Inhumanized>
